@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-iwpg
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0036-tenant/ci10t-776-0036-app/devfile-sample-iwpg@sha256:5ebafb52c2293174823a46df04c142a5bc55065278dbce676f86e53fbebdeab8
+        name: my-nodejs
+        resources: {}
+status: {}
